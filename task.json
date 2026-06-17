@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C++ Build and Run",
+      "type": "shell",
+      "command": "mkdir -p \"${workspaceFolder}/build\" && g++ -std=c++17 -O2 -Wall -Wextra -Wshadow \"${file}\" -o \"${workspaceFolder}/build/${fileBasenameNoExtension}\" && \"${workspaceFolder}/build/${fileBasenameNoExtension}\" < \"${workspaceFolder}/input.txt\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
